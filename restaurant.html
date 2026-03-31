@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TEST — Fine Dining</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+
+<!-- ── MOBILE MENU ── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#menu" onclick="closeMobile()">Menu</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ── NAVBAR ── -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">test<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-reserve">Reserve a Table</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Est. 2009 · New Delhi</p>
+    <h1 class="hero-title">test</h1>
+    <p class="hero-subtitle">Where darkness becomes flavour</p>
+    <div class="hero-divider"></div>
+    <a href="#menu" class="hero-cta">Explore Our Menu</a>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<section id="about">
+  <div class="about-image-wrap reveal">
+    <div class="about-img-accent"></div>
+    <img
+      class="about-img"
+      src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+      alt="Chef at work"
+      loading="lazy"
+    />
+    <div class="about-img-label">Since 2009</div>
+  </div>
+  <div class="about-body reveal">
+    <p class="section-label">Our Story</p>
+    <h2 class="section-title">Cuisine born<br>from <em>passion</em></h2>
+    <div class="gold-rule"></div>
+    <p>Nestled in the heart of the city, test is a sanctuary of flavour — where classical French technique meets the bold aromatics of the subcontinent. Every dish tells a story of craft, patience, and obsession.</p>
+    <p>Our team of artisan chefs sources only the finest seasonal produce, forging menus that shift with the earth's rhythm. A meal at test is not simply dinner — it is an immersion in the philosophy that darkness holds infinite depth.</p>
+    <div class="about-stats">
+      <div class="stat">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Years of Craft</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Michelin Stars</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">48</div>
+        <div class="stat-label">Seasonal Dishes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     MENU
+══════════════════════════════ -->
+<section id="menu">
+  <div class="menu-header reveal">
+    <p class="section-label">Curated Selections</p>
+    <h2 class="section-title">Our <em>Menu</em></h2>
+    <div class="gold-rule"></div>
+  </div>
+
+  <div class="menu-tabs reveal">
+    <button class="tab-btn active" data-tab="starters">Starters</button>
+    <button class="tab-btn" data-tab="mains">Mains</button>
+    <button class="tab-btn" data-tab="desserts">Desserts</button>
+    <button class="tab-btn" data-tab="drinks">Drinks</button>
+  </div>
+
+  <!-- STARTERS -->
+  <div class="menu-panel active reveal" id="tab-starters">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Truffle Arancini <span class="menu-item-badge">Chef's Pick</span></div>
+          <div class="menu-item-desc">Black truffle, aged Parmesan, saffron aioli, micro herbs</div>
+        </div>
+        <div class="menu-item-price">₹895</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Salmon Tartare</div>
+          <div class="menu-item-desc">Cured Atlantic salmon, cucumber gelée, caviar, blinis</div>
+        </div>
+        <div class="menu-item-price">₹1,150</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Burrata Noir</div>
+          <div class="menu-item-desc">Squid ink burrata, heirloom tomato, basil oil, sea salt</div>
+        </div>
+        <div class="menu-item-price">₹980</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Foie Gras Torchon</div>
+          <div class="menu-item-desc">Pan-seared foie gras, brioche, fig compote, port reduction</div>
+        </div>
+        <div class="menu-item-price">₹1,650</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Bisque d'Homard</div>
+          <div class="menu-item-desc">Lobster bisque, cognac cream, chive oil, garlic croutons</div>
+        </div>
+        <div class="menu-item-price">₹1,280</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Heirloom Beet <span class="menu-item-badge">Vegan</span></div>
+          <div class="menu-item-desc">Roasted beet, smoked cashew cream, pickled apple, walnut</div>
+        </div>
+        <div class="menu-item-price">₹720</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAINS -->
+  <div class="menu-panel" id="tab-mains">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Wagyu Tenderloin <span class="menu-item-badge">Signature</span></div>
+          <div class="menu-item-desc">A5 Wagyu, black garlic purée, bone marrow jus, truffle shavings</div>
+        </div>
+        <div class="menu-item-price">₹5,800</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Butter Poached Lobster</div>
+          <div class="menu-item-desc">Maine lobster, saffron beurre blanc, fennel, micro dill</div>
+        </div>
+        <div class="menu-item-price">₹4,200</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Lamb Rack Royale</div>
+          <div class="menu-item-desc">Herb-crusted rack, rosemary jus, dauphinoise, ratatouille</div>
+        </div>
+        <div class="menu-item-price">₹3,600</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Duck Confit <span class="menu-item-badge">Chef's Pick</span></div>
+          <div class="menu-item-desc">48hr confit leg, cherry reduction, lentils du Puy, crispy skin</div>
+        </div>
+        <div class="menu-item-price">₹2,800</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Black Truffle Risotto <span class="menu-item-badge">Veg</span></div>
+          <div class="menu-item-desc">Aged Arborio, summer truffle, Parmesan foam, chive</div>
+        </div>
+        <div class="menu-item-price">₹2,200</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Pan-Seared Sea Bass</div>
+          <div class="menu-item-desc">Chilean sea bass, smoked mussel velouté, asparagus, capers</div>
+        </div>
+        <div class="menu-item-price">₹3,100</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESSERTS -->
+  <div class="menu-panel" id="tab-desserts">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Valrhona Soufflé <span class="menu-item-badge">Signature</span></div>
+          <div class="menu-item-desc">72% dark chocolate soufflé, vanilla ice cream, gold leaf</div>
+        </div>
+        <div class="menu-item-price">₹950</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Crème Brûlée Noir</div>
+          <div class="menu-item-desc">Activated charcoal custard, cardamom, gold caramel crust</div>
+        </div>
+        <div class="menu-item-price">₹680</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Paris-Brest</div>
+          <div class="menu-item-desc">Hazelnut praline mousseline, choux pastry, praline feuilletine</div>
+        </div>
+        <div class="menu-item-price">₹820</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Mango Tatin</div>
+          <div class="menu-item-desc">Alphonso mango, puff pastry, cardamom chantilly, basil oil</div>
+        </div>
+        <div class="menu-item-price">₹780</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DRINKS -->
+  <div class="menu-panel" id="tab-drinks">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Noir Negroni <span class="menu-item-badge">Signature</span></div>
+          <div class="menu-item-desc">Black sesame gin, squid ink vermouth, activated charcoal bitters</div>
+        </div>
+        <div class="menu-item-price">₹980</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Smoked Old Fashioned</div>
+          <div class="menu-item-desc">12yr bourbon, smoked cherry, black walnut bitters, orange zest</div>
+        </div>
+        <div class="menu-item-price">₹1,100</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Gold Saffron Martini</div>
+          <div class="menu-item-desc">Saffron vodka, elderflower, gold flakes, lemon foam</div>
+        </div>
+        <div class="menu-item-price">₹950</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name">Non-Alcoholic Pairing</div>
+          <div class="menu-item-desc">House-brewed kombucha, shrubs, botanical infusions — 3 courses</div>
+        </div>
+        <div class="menu-item-price">₹1,400</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     GALLERY
+══════════════════════════════ -->
+<section id="gallery">
+  <div class="gallery-header reveal">
+    <p class="section-label">Visual Journey</p>
+    <h2 class="section-title">A Feast for<br>the <em>Eyes</em></h2>
+    <div class="gold-rule"></div>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80" alt="Plated dish"/>
+      <div class="g-overlay"><span class="g-label">Signature Plates</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Restaurant interior"/>
+      <div class="g-overlay"><span class="g-label">The Ambiance</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80" alt="Cocktails"/>
+      <div class="g-overlay"><span class="g-label">Craft Cocktails</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Food art"/>
+      <div class="g-overlay"><span class="g-label">Culinary Art</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=80" alt="Dessert"/>
+      <div class="g-overlay"><span class="g-label">Sweet Endings</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Gourmet food"/>
+      <div class="g-overlay"><span class="g-label">Chef's Table</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+<section id="contact">
+  <div class="contact-left reveal">
+    <p class="section-label">Get In Touch</p>
+    <h2 class="section-title">Reserve Your<br><em>Experience</em></h2>
+    <div class="gold-rule"></div>
+    <p class="contact-text">Whether you wish to secure a table for two or arrange a private dining event for fifty, we would be honoured to welcome you into our world. Reach us through any of the channels below.</p>
+
+    <div class="contact-buttons">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/notchgiga?igsh=MWpldGp2Z2p2MzVuYg==" target="_blank" class="contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span>Follow on Instagram</span>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/message/Q3QD7BN3ZL5JM1" target="_blank" class="contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        <span>WhatsApp Reservation</span>
+      </a>
+      <!-- Email -->
+      <a href="mailto:reservations@notch.com" class="contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>reservations@notchindia.com</span>
+      </a>
+      <!-- Phone -->
+      <a href="" class="contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        <span>+91 **********</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-right reveal">
+    <div class="contact-info-block">
+      <div class="contact-info-item">
+        <div class="info-label">Location</div>
+        <div class="info-val">12, Lodhi Colony<br>New Delhi, India — 110003</div>
+      </div>
+      <div class="contact-info-item">
+        <div class="info-label">Dining Hours</div>
+        <div class="info-val">
+          Monday – Friday<br>12:00 PM – 3:00 PM · 7:00 PM – 11:30 PM
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="info-label">Weekend & Brunch</div>
+        <div class="info-val">
+          Saturday & Sunday<br>11:00 AM – 4:00 PM · 7:00 PM – 12:00 AM
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="info-label">Private Dining</div>
+        <div class="info-val">Available for groups of 10+<br>Custom menus on request</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">test</div>
+      <p class="footer-brand-tagline">A fine dining sanctuary in the heart of New Delhi, where every meal is a journey into the depths of flavour and craft.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Navigate</div>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Reservations</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Hours</div>
+      <ul>
+        <li>Mon – Fri<br>12:00 – 15:00</li>
+        <li>Mon – Fri<br>19:00 – 23:30</li>
+        <li>Sat & Sun<br>11:00 – 16:00</li>
+        <li>Sat & Sun<br>19:00 – 00:00</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li>12, Lodhi Colony<br>New Delhi 110003</li>
+        <li>+91 98765 43210</li>
+        <li>reservations<br>@testindia.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 test Fine Dining. All rights reserved.</span>
+    <span class="footer-copy" style="color: var(--gold-dim);">Crafted with obsession.</span>
+  </div>
+</footer>
+
+<script>
+  /* ── Navbar scroll ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  /* ── Mobile menu ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  function toggleMobile() {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  }
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  /* ── Menu tabs ── */
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+
+  /* ── Scroll reveal ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+
+  /* ── Parallax hero bg subtle ── */
+  const heroBg = document.querySelector('.hero-bg');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < window.innerHeight) {
+      heroBg.style.transform = `scale(1.07) translateY(${window.scrollY * 0.18}px)`;
+    }
+  }, { passive: true });
+</script>
+</body>
+</html>

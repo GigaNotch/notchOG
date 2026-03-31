@@ -1,0 +1,143 @@
+*{
+    margin: 0%;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+nav{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.headers{
+    display: flex;
+    gap: 20px;
+}
+.HELLO{
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+.about{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 60px;
+}
+.about2{
+    display: block;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.719);
+    margin-left: 200px;
+}
+.connect{
+    display: block;
+    margin-left: 200px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(80, 80, 240, 0.507);
+    color: white;
+}
+.about1{
+    display:flex;
+    align-items: center;
+    gap:300px;
+
+}
+#pfp{
+    width: 100px;
+    height: 100px;
+}
+#about-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#skills{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skill1{
+    display:flex;
+    gap: 20px;
+}
+.skill1-info{
+    display: block;
+    
+}
+.skill2{
+    display:flex;
+    gap: 20px;
+}
+.skill2-info{
+    display: block;
+}
+.skill3{
+    display:flex;
+    gap: 20px;
+}
+.skill3-info{
+    display: block;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin-top: 50px;
+    background-color: black;
+    padding: 10px;
+}
+.insta{
+    cursor: pointer;
+    border: none;
+ background-color:rgba(80, 80, 240, 0.507);
+    padding: 10px;
+    border-radius: 3px;
+    color:white;
+}
+.gmail{
+
+    padding: 20px;
+}
+.Github{
+    cursor: pointer;
+    border: none;
+    background-color:rgba(80, 80, 240, 0.507);
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+}
+#image{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.preview{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
