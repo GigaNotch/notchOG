@@ -191,6 +191,14 @@ a{
     left:105px;
     bottom:125px
 }
+.charizard{
+    display: flex;
+    height: 300px;
+    position: absolute;
+    right:30px;
+    top:100px;
+    opacity: 0.7;
+}
 
 
 /* --- Mobile View (Phones) --- */
@@ -240,10 +248,12 @@ a{
 
    
     .discription {
+        display: flex;
         position: relative;
         top: 0;
-        right: 0;
+        left: 0%;
         margin-top: 30px;
+        margin-left: 9px;
         width: 100%;
         font-size: 14px;
         line-height: 1.5;
@@ -275,5 +285,12 @@ a{
         left: 15px;
         top: auto; 
         transform: translateY(100%); 
+    }
+    .charizard{
+        display: flex;
+        position: absolute;
+        height: 80px;
+        top:280px;
+        right:0
     }
 }
