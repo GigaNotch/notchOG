@@ -44,36 +44,37 @@ body::before {
     z-index: -1;
 }
 #box{
-    background: rgba(26, 95, 89, 0.562);
+    background: rgba(11, 255, 235, 0.521);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
     width:70%;
     height: 750px;
     border-radius: 10px;
-    box-shadow: 10px 10px 200px 300px #000000;
-    box-shadow: inset 10px 10px 300px 90px #000000;
+    box-shadow: 0 3px 90px 20px rgba(0, 0, 0, 0.5);
+
+    
     justify-content: center;
     display: flex;
     overflow: hidden;
 }
-/* #box::before {
+ #box::before {
   content: "";
   position: absolute;
   top: 0; 
   left: 0;
   width: 100%;
   height: 100%;
-
+  box-shadow: inset 10px 10px 300px 90px #000000;
   background-image: url(junichi.jpg);
   background-size: cover;
   background-position: center;
 
-  filter: blur(18px);
+  filter: blur(5px);
 
   z-index: -1;
   transform: scale(1.1);
-} */
+}
 #box-content{
     display: block;
     margin-top: 40px;
@@ -130,7 +131,7 @@ a{
   position: relative;
   display: flex;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff8e;
   padding: 8px; /* Space around the items */
   border-radius: 50px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -187,8 +188,8 @@ a{
     position: absolute;
     color:white;
     opacity: 0.6;
-    right:350px;
-    top:455px
+    left:105px;
+    bottom:125px
 }
 
 
