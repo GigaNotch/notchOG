@@ -44,15 +44,15 @@ body::before {
     z-index: -1;
 }
 #box{
-    background: rgba(0, 0, 0, 0.795);
+    background: rgba(26, 95, 89, 0.562);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
     width:70%;
     height: 750px;
     border-radius: 10px;
-    box-shadow: 10px 10px 200px 300px #331e44;
-    box-shadow: inset 10px 10px 300px 90px #34263a;
+    box-shadow: 10px 10px 200px 300px #000000;
+    box-shadow: inset 10px 10px 300px 90px #000000;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -118,6 +118,7 @@ a{
     border-radius: 12px;
     color: black;
     font-family:  Courier,;
+    cursor: pointer;
 }
 
 #navigation{
@@ -180,4 +181,12 @@ a{
 }
 #navigation{
     font-family:  Courier, monospace;
+}
+.discription{
+    display: flex;
+    position: absolute;
+    color:white;
+    opacity: 0.6;
+    right:350px;
+    top:455px
 }
