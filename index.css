@@ -30,7 +30,7 @@ body::before {
     height: 100vh;
     
   
-    background-image:url(junichi.jpg); 
+    background-image:url(piqsels.com-id-orrmk.jpg); 
     
     background-size: cover;
     background-position: center;
@@ -201,7 +201,7 @@ a{
 }
 
 
-/* --- Mobile View (Phones) --- */
+
 @media screen and (max-width: 768px) {
     body {
         margin-top: 0;
